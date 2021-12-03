@@ -1,0 +1,88 @@
+.top {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.navbar {
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.padding {
+  padding: 1.5rem 1.6rem;
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/********** links **********/
+.item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
+.button {
+  white-space: normal;
+  text-decoration: none;
+  color: #777070;
+}
+
+.button:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 2.1rem;
+}
+
+.toggle-button .bar {
+  height: 0.3rem;
+  width: 100%;
+  background-color: #777070;
+  border-radius: 1rem;
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .right-item-button {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .right-item-button {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .right-item-button.active {
+    /* display: flex; */
+  }
+}
