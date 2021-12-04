@@ -66,16 +66,14 @@
 
   .right-item-button {
     display: none;
+    width: 100%;
   }
 
   .navbar {
     flex-direction: column;
   }
 
-  .right-item-button {
-    display: flex;
-    flex-direction: column;
-
+  .right-item-button .button {
     width: 100%;
     text-align: center;
     padding-top: 1rem;
@@ -83,6 +81,6 @@
   }
 
   .right-item-button.active {
-    /* display: flex; */
+    display: flex;
   }
 }
